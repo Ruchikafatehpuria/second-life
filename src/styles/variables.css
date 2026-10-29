@@ -1,0 +1,72 @@
+/*
+  Design tokens for Second Life.
+  Every colour, spacing value and radius used in the app comes from here,
+  so changing the look of the whole site means editing only this file.
+*/
+:root {
+  /* Greens: brand colour */
+  --green-900: #1c3a28;
+  --green-800: #24503a;
+  --green-700: #2f6b45;
+  --green-600: #3a7d52;
+  --green-500: #4c9a68;
+  --green-200: #c6e2cf;
+  --green-100: #e5f2e8;
+
+  /* Creams and neutrals */
+  --cream-50: #fdfbf5;
+  --cream-100: #f8f3e8;
+  --cream-200: #efe6d2;
+  --white: #ffffff;
+
+  /* Text */
+  --text: #1f2a24;
+  --text-muted: #56665c;
+  --text-on-green: #fdfbf5;
+
+  /* Feedback colours */
+  --danger: #b3261e;
+  --danger-bg: #fbeaea;
+  --warning: #7a5000;
+  --warning-bg: #fff4d6;
+  --info: #1d4f73;
+  --info-bg: #e6f0f7;
+  --success: var(--green-700);
+  --success-bg: var(--green-100);
+
+  /* Borders and surfaces */
+  --border: #e2dac7;
+  --surface: var(--white);
+  --page-bg: var(--cream-50);
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: clamp(2rem, 5vw, 3.25rem);
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  /* Shape and depth */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+  --shadow-sm: 0 1px 2px rgba(28, 58, 40, 0.06);
+  --shadow: 0 4px 16px rgba(28, 58, 40, 0.08);
+  --shadow-lg: 0 12px 32px rgba(28, 58, 40, 0.12);
+
+  --container: 1160px;
+  --header-height: 64px;
+}

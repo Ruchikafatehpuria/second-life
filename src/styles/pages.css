@@ -1,0 +1,385 @@
+/* Page-specific styles. */
+
+.section-cream {
+  background: var(--cream-100);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.narrow {
+  max-width: 760px;
+}
+
+.narrow-text {
+  max-width: 760px;
+}
+
+.narrow-text h2:not(:first-child) {
+  margin-top: var(--space-6);
+}
+
+/* ---------- Home: hero ---------- */
+
+.hero {
+  padding: var(--space-8) 0;
+  background:
+    radial-gradient(circle at 85% 20%, var(--green-200) 0, transparent 40%),
+    linear-gradient(160deg, var(--cream-100), var(--green-100));
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.hero-eyebrow {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-700);
+}
+
+.hero-title {
+  margin: 0;
+  max-width: 720px;
+  font-size: var(--font-size-3xl);
+  letter-spacing: -0.02em;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--text-muted);
+}
+
+/* ---------- Home: steps & categories ---------- */
+
+.steps {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: var(--space-3);
+  font-size: 1.6rem;
+  background: var(--green-100);
+  border-radius: var(--radius);
+}
+
+.category-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-3);
+  font-weight: 600;
+  text-align: center;
+  color: var(--green-900);
+  text-decoration: none;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.category-tile:hover {
+  border-color: var(--green-500);
+  transform: translateY(-2px);
+}
+
+.category-icon {
+  font-size: 2rem;
+}
+
+/* ---------- Home: call-to-action band ---------- */
+
+.cta-band {
+  padding: var(--space-7) 0;
+  background: var(--green-800);
+  color: var(--green-100);
+}
+
+.cta-band h2 {
+  color: var(--white);
+}
+
+.cta-band p {
+  margin: 0;
+}
+
+.cta-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+}
+
+.btn-on-dark {
+  background: var(--cream-50);
+  color: var(--green-900);
+}
+
+.btn-on-dark:hover:not(:disabled) {
+  background: var(--white);
+  color: var(--green-900);
+}
+
+/* ---------- Browse ---------- */
+
+.browse {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.browse .sample-notice {
+  margin: 0;
+}
+
+.results-count {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* ---------- Item details ---------- */
+
+.breadcrumb {
+  margin-bottom: var(--space-4);
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
+
+.details {
+  display: grid;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+@media (min-width: 860px) {
+  .details {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.details-info {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.details-info h1 {
+  margin: 0;
+}
+
+.details-description {
+  margin: 0;
+  white-space: pre-line;
+}
+
+.details-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-3);
+  margin: 0;
+  padding: var(--space-4);
+  background: var(--cream-100);
+  border-radius: var(--radius);
+}
+
+.details-meta dt {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
+
+.details-meta dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.details-form h2 {
+  margin-bottom: var(--space-1);
+}
+
+.report summary {
+  cursor: pointer;
+  color: var(--danger);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-3);
+}
+
+/* ---------- Auth pages ---------- */
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-7) var(--space-4);
+  background: linear-gradient(160deg, var(--cream-100), var(--green-100));
+  min-height: calc(100vh - var(--header-height) - 200px);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: var(--space-6);
+}
+
+.auth-switch {
+  margin: var(--space-5) 0 0;
+  text-align: center;
+}
+
+/* ---------- Contact ---------- */
+
+.contact-layout {
+  display: grid;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.check-list {
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.check-list li {
+  position: relative;
+  padding-left: var(--space-6);
+}
+
+.check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--green-800);
+  background: var(--green-100);
+  border-radius: 50%;
+}
+
+/* ---------- Dashboard ---------- */
+
+.panel-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--space-4);
+}
+
+.request-list {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.request-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.request h3 {
+  margin-bottom: var(--space-1);
+}
+
+.request-meta {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-2);
+}
+
+.request-message {
+  margin: 0;
+  font-style: italic;
+}
+
+/* ---------- Admin ---------- */
+
+.stats {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--green-700);
+  line-height: 1.1;
+}
+
+.stat-label {
+  color: var(--text-muted);
+}
+
+.admin-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- Repair & Reuse / About ---------- */
+
+.reasons {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.numbered-list {
+  display: grid;
+  gap: var(--space-3);
+  padding-left: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.tech-list {
+  display: grid;
+  gap: var(--space-2);
+  padding-left: var(--space-5);
+}
